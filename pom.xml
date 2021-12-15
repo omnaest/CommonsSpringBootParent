@@ -17,6 +17,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+		<log4j2.version>2.16.0</log4j2.version>
 	</properties>
 
 	<distributionManagement>
@@ -203,6 +204,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.omnaest.utils</groupId>
+			<artifactId>CommonsLog</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 			<exclusions>
@@ -224,11 +230,5 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.omnaest.utils</groupId>
-			<artifactId>CommonsLog</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
-
 </project>
